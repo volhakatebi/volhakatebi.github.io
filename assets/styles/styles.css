@@ -1,0 +1,86 @@
+/* Importing fonts for headings and body text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS variables for future edits */
+:root {
+    --main-color: #394044;
+    --hover-color: #0077B6; /* Oceanic color for hover */
+    --background-color: #F4F4F4; /* Neutral background color */
+    --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    --border-radius: 8px;
+}
+
+/* Universal Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding: 2% 5%;
+}
+
+header, nav, footer, .blog-container, section {
+    background-color: var(--background-color);
+    box-shadow: var(--card-shadow);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+header h1, .blog-title {
+    font-size: 2.5em;
+    font-family: 'Arial', sans-serif; /* 90s vibe with Arial font for headings */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+nav a, footer a, .blog-post h2 a {
+    text-decoration: none;
+    color: var(--main-color);
+    padding: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover, footer a:hover, .blog-post h2 a:hover {
+    color: var(--background-color);
+    background-color: var(--hover-color);
+    border-radius: var(--border-radius);
+}
+
+#links a, .blog-post-date {
+    margin: 0 15px;
+    color: #555;
+    font-style: italic;
+}
+
+#links i {
+    transition: color 0.3s ease;
+}
+
+#links a:hover i {
+    color: var(--main-color);
+}
+
+footer {
+    border-top: 3px double var(--main-color);
+    padding-top: 20px;
+}
+
+#about-me img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Rest of your styles remain unchanged... */
+
